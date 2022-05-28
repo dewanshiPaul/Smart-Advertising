@@ -2,7 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Webcamcapture } from './webcam';
 import YOUTUBELOGO from '../header/youtube_logo.jpg';
 import './_loginscreen.scss';
-
+//login screen template
+//face detection at backend by sending base64 code of frame
+//allow google auth for face matched user
+//checkbox for allow adult ads
 export function Loginscreen({handleNoAdultAds}) {
 
     const[showWebcam, setShowWebcam] = useState(false);
@@ -30,7 +33,6 @@ export function Loginscreen({handleNoAdultAds}) {
                                 <div>
                                 <input type='checkbox' id='adultAdsRestricted' checked={isChecked} onChange={handleOnCheckBox}/> 
                                 <label for='adultAdsRestricted' style={{marginLeft: '1rem'}}>Do not allow adult ads</label>
-                                {/* <div className='result'> Above checkbox is {isChecked?"checked":"un-checked"}</div> */}
                                 </div>
                                 : null } 
                         </div>

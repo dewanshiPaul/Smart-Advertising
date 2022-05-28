@@ -4,11 +4,12 @@ import numeral from "numeral";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { AiFillEye } from 'react-icons/ai';
 import { Col,Row } from 'react-bootstrap';
-// import Avatar from '../header/avatar.jpg';
 import request from '../../apiFromYoutbe';
 import "./_videonext.scss";
 import { useNavigate } from "react-router-dom";
-
+//related videos design template 
+//data from youtube api
+//show only 15 related videos
 export function Videonext({ video,isSearchScreen,subscriptionScreen }) {
     const {id,snippet:{channelId,channelTitle,description,title,publishedAt,thumbnails:{ medium },resourceId}} = video
     const isVideo = !(id.kind === 'youtube#channel'||subscriptionScreen);
@@ -17,7 +18,6 @@ export function Videonext({ video,isSearchScreen,subscriptionScreen }) {
     const[duration,setDuration] = useState(null); 
     const[channelIcon,setChannelIcon] = useState(null);
 
-    // const _videoId = id?.videoId || id;
 
     useEffect(() => {
         const getContentDetails = async () => {

@@ -8,7 +8,7 @@ import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRelatedVideosById, getVideoDetailsById } from '../../redux/action/videoAction';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
-
+//page design for watching videos, related videos only 15 and comments with infinite scrolling
 export function Watchscreen() {
     const {id} = useParams()
 

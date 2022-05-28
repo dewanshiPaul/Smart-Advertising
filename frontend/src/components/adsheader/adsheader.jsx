@@ -1,23 +1,23 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import './_adsheader.scss';
-import BOXER from '../../adsimages/adult/boxer.jpg';
-import BRA from '../../adsimages/adult/bra.jpg';
-import MANFORCE from '../../adsimages/adult/manforce.jpg';
-import VIMAL from '../../adsimages/adult/vimal.jpg';
-import WHISPER from '../../adsimages/adult/whisper.jpg';
-import LEGOS from '../../adsimages/kids/legos.jpg';
-import APSARA from '../../adsimages/kids/apsara.jpg';
-import BARBIE from '../../adsimages/kids/barbie.jpg';
-import MPP from '../../adsimages/kids/mamypokopants.jpg';
-import KJ from '../../adsimages/kids/kinderjoy.jpeg';
+import ADULT1 from '../../adsimages/adult/adult1.jpg';
+import ADULT2 from '../../adsimages/adult/adult2.jpg';
+import ADULT3 from '../../adsimages/adult/adult3.jpg';
+import ADULT4 from '../../adsimages/adult/adult4.jpg';
+import ADULT5 from '../../adsimages/adult/adult5.jpg';
+import KIDS1 from '../../adsimages/kids/kids1.jpg';
+import KIDS2 from '../../adsimages/kids/kids2.jpg';
+import KIDS3 from '../../adsimages/kids/kids3.jpg';
+import KIDS4 from '../../adsimages/kids/kids4.jpg';
+import KIDS5 from '../../adsimages/kids/kids5.jpeg';
 
 
 
-
+//get age details from backend and display images as conditions
 export function Adsheader({adsData,noAdultAds}) {
-    const imageList1 = [LEGOS, APSARA, BARBIE, MPP, KJ];
-    const imageList2 = [BOXER, BRA, MANFORCE, VIMAL,WHISPER];
+    const imageList1 = [KIDS1, KIDS2, KIDS3, KIDS4, KIDS5];
+    const imageList2 = [ADULT1, ADULT2, ADULT3, ADULT4,ADULT5];
     const idx = Math.floor(Math.random()*5);
     console.log(noAdultAds)
     const getImage = (adsData,noAdultAds) => {

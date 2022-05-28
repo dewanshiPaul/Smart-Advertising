@@ -5,8 +5,8 @@ import { Container } from "react-bootstrap";
 import { useDispatch,useSelector } from "react-redux";
 import { getSubscriptionChannel } from "../../redux/action/videoAction";
 import { Videonext } from "../videonext/videonext";
-import InfiniteScroll from "react-infinite-scroll-component";
-
+//subscription page template
+// data from youtube api
 export function Subscriptionscreen() {
 
     const dispatch = useDispatch();
@@ -16,25 +16,10 @@ export function Subscriptionscreen() {
     },[dispatch])
 
     const {loading,videos} = useSelector(state => state.subscriptionChannelReducer);
-
-    const fetchData = () => {
-        dispatch(getSubscriptionChannel());
-    }
+    
     return (
         <div>
                 <Container fluid> 
-                    {/* <InfiniteScroll
-                    dataLength={videos.length}
-                    next={fetchData}
-                    hasMore={true}
-                    loader={
-                        <div className="spinner-border text-danger d-block mx-auto" ></div>
-                    }
-                    endMessage = {
-                        <p style={{ textAlign: 'center'}}>
-                            <b> Yay! You have seen it all</b>
-                        </p>
-                    }> */}
                         { 
                             !loading ? ( 
                                 videos?.map(video => <Videonext video={video} key={video.id} subscriptionScreen/>)
@@ -44,7 +29,6 @@ export function Subscriptionscreen() {
                                     </SkeletonTheme>
                                 )
                         }
-                    {/* </InfiniteScroll> */}
                 </Container>
         </div>
     )

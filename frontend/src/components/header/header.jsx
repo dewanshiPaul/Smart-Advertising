@@ -4,11 +4,11 @@ import './_header.scss';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { MdNotifications, MdApps } from 'react-icons/md';
-import YOUTUBELOGO from './youtube_logo.jpg';
-// import AVATAR from './avatar.jpg'; 
+import YOUTUBELOGO from './youtube_logo.jpg'; 
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-
+//design of header section
+//props for side bar to close and open on click
 export function Header({handleToggleSidebar}) {
     const[input,setInput] = useState('');
 

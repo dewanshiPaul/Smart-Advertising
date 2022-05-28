@@ -8,7 +8,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import request from "../../apiFromYoutbe";
 
 export function Content({ video,isChannelScreen }) {
-
+    //video with thumbnail design
     const {
         id,
         snippet: {
@@ -65,7 +65,6 @@ export function Content({ video,isChannelScreen }) {
     return (
         <div className="content" onClick={ handleVideoClick }>
             <div className="content-top">
-                {/* <img src={ medium.url } alt='video'/> */}
                 <LazyLoadImage src={ medium.url } effect="blur" />
                 <span className="content-top-duration">{ _duration }</span>
             </div>

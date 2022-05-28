@@ -1,7 +1,7 @@
 import React from "react";
 import Skeleton,{ SkeletonTheme } from "react-loading-skeleton";
 import 'react-loading-skeleton/dist/skeleton.css';
-
+//skeleton for each video thumbnail format
 export function Skeletonframe() {
     return (
         <div style = {{ width: '100%', margin: '1rem 0.5rem'}}>

@@ -3,9 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Comment } from '../comment/comment';
 import { getCommentList, postComment } from '../../redux/action/commentAction';
 import InfiniteScroll from 'react-infinite-scroll-component';
-// import Avatar from '../header/avatar.jpg';
 import './_comments.scss';
-
+//for entire comment area template with infinite scrolling
 export function Comments({ videoId,totalComment }) {
     const dispatch = useDispatch();
 

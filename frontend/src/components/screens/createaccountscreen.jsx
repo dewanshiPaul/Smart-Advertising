@@ -1,10 +1,10 @@
 import React,{ useState,useEffect } from "react";
 import axios from 'axios';
 import { FaUserAlt } from "react-icons/fa";
-import { MdEmail } from 'react-icons/md';
 import YOUTUBELOGO from '../header/youtube_logo.jpg';
 import './_createaccountscreen.scss';
-
+//sign in page template 
+//passing data to backend
 export function CreateAccount() {
     const[details,setDetails] = useState({
         fname: '',

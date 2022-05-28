@@ -4,8 +4,9 @@ import Webcam from 'react-webcam';
 import { useDispatch, useSelector } from 'react-redux';
 import { login } from '../../redux/action/authaction'
 import { useNavigate } from 'react-router-dom';
-// import { FaUserAlt } from "react-icons/fa";
 import './_webcam.scss';
+
+//webcam for sending data face detected from login page for detection
 
 export function Webcamcapture({handleShowCheckBox}) {
     const webcamRef = useRef(null);
@@ -70,7 +71,6 @@ export function Webcamcapture({handleShowCheckBox}) {
     return(
         <div className="Webcam" >
             <div className="field">
-                    {/* < FaUserAlt width={24} height={24}/> */}
                     <input type="text" placeholder="username" name="user" value={user} onChange={handleInput} required autoComplete="off"/>
             </div>
             <Webcam audio={false} height={400} ref={webcamRef} screenshotFormat="image/jpeg" width={350} videoConstraints={videoConstraints}/>

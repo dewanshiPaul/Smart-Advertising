@@ -1,7 +1,7 @@
 import React from "react";
 import moment from "moment";
 import './_comment.scss'
-
+//template for each comment
 export function Comment({ comment }) {
     const { authorDisplayName,authorProfileImageUrl,publishedAt,textOriginal } = comment;
 

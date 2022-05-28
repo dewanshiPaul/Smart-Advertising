@@ -1,7 +1,7 @@
 import React,{ useCallback,useEffect,useRef, useState } from "react";
 import axios from 'axios';
 import Webcam from 'react-webcam';
-
+//webcam section which passes base64 code of frame to backend
 export function Agewebcam({handleData}) {
     const webcamRef = useRef(null);
     const[getData,setGetData] = useState('');
@@ -14,7 +14,6 @@ export function Agewebcam({handleData}) {
 
     const screenshot = useCallback(() => {
         const Imagesrc = webcamRef.current.getScreenshot();
-        // console.log(Imagesrc);
         axios.post('http://127.0.0.1:5000/verify',{data:Imagesrc})
             .then(res => {
                 console.log(`response = ${res}`);
@@ -26,11 +25,10 @@ export function Agewebcam({handleData}) {
     },[webcamRef])
 
     useEffect(() => {
-        // console.log(getData);
         handleData(getData);
     },[getData])
 
-    setInterval(screenshot,5000);
+    setInterval(screenshot,5000);//duration of 5s for getting frame
     
     return (
         <>

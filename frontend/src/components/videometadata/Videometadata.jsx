@@ -4,10 +4,10 @@ import moment from "moment";
 import numeral from "numeral";
 import Showtext from "react-show-more-text";
 import { MdThumbUp,MdThumbDown } from "react-icons/md";
-// import Avatar from '../header/avatar.jpg';
 import './_Videometadata.scss'
 import { getChannelDetailsById,getSubscriptionStatus } from "../../redux/action/channelAction";
-
+//details of video playing currently
+//name, description, channel, like count
 export function Videometadata({video:{snippet,statistics}, videoId}) {
     const { channelId, channelTitle, description, title, publishedAt } = snippet;
     const { viewCount, likeCount, dislikeCount } = statistics;

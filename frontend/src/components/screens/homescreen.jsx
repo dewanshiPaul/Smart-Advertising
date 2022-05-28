@@ -6,7 +6,8 @@ import { getMostWatchedVideos } from "../../redux/action/videoAction";
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { Skeletonframe } from '../skeletonframe/skeletonframe';
 
-
+//home page design template
+//data from youtube api
 export function Homescreen() {
 
     const dispatch = useDispatch();

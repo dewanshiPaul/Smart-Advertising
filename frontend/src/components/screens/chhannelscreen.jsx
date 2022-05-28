@@ -9,7 +9,8 @@ import { Content } from "../content/content"
 import { Skeletonframe } from '../skeletonframe/skeletonframe';
 import numeral from "numeral";
 import './_channelscreen.scss';
-
+//channel section template with details of
+//subscriber count from api
 export function Channelscreen() {
     const {channelId} = useParams();
     

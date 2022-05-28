@@ -50,18 +50,7 @@ const LayoutHome = ({ children,noAdultAds }) => {
 
 
 function App() {
-
-  // const loading =  useSelector(state => state.auth.loading);
-  // const accessToken = useSelector(state => state.auth.accessToken)
-
-  // const navigate = useNavigate();
-
-  // useEffect(()=> {
-  //   if(!loading && !accessToken) {
-  //     navigate('/login')
-  //   }
-  // },[accessToken,loading,navigate])
-
+//fpr not showing adult ads when ticked
   const [noAdultAds,setNoAdultAds] = useState(false);
   const handleNoAdultAds = (noAdultAds) => {
     setNoAdultAds(noAdultAds);

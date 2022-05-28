@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { getSearchVideos } from "../../redux/action/videoAction"
 import { Videonext } from "../videonext/videonext";
-
+//search screen template with query  results from youtube api
 export function Searchscreen() {
     const { query } = useParams();
 
