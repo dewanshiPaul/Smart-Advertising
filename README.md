@@ -32,8 +32,10 @@ This project web-app UI ans tasks are **inspired from Youtube web**. So, the int
   - comment to a video
   - see subscribed channels
   - disable to allow adult ads
+  - authentication with face + google
+  - segregate advertisements with age of user
 <br />
-The above tasks can be <strong>performed with the use of youtube api. This api has 10,000 quota. Each tasks have certain number of quotas to work with. Once, this quota is over. This tasks cannot be performed(As task was to concern more over facial recognition since it is the topic)</strong>. Go to <strong>Common Error Faced</strong> for solving this error.
+The above four tasks can be <strong>performed with the use of youtube api. This api has 10,000 quota. Each tasks have certain number of quotas to work with. Once, this quota is over. This tasks cannot be performed(As task was to concern more over facial recognition since it is the topic)</strong>. Go to <strong>Common Error Faced</strong> for solving this error.
 In this platform, user gets authenticated with their face first then google authentication takes place. Once, user gets into the platform and perform tasks, camera identifies the face of the user and detects its age. As per the age, advertisements are shown.
 
 ## Overview of the Project
