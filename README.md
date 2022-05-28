@@ -78,9 +78,13 @@ In this platform, user gets authenticated with their face first then google auth
      ```
   3. Enter inside the virtual environment
      Write the following command in the terminal/command prompt.
+     for windows
      ```
-     "venv\Scripts\activate" for windows
-     source venv/bin/activate for mac-os
+     "venv\Scripts\activate" 
+     ```
+     for mac-os
+     ```
+     source venv/bin/activate 
      ```
   4. Install modules
      Write the following command in the terminal/command prompt.
