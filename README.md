@@ -1,4 +1,18 @@
-# Smart-Advertising
+# Smart-Advertising #
+
+## Table of Contents
+  - [Problem Statement](#problem-statement)
+  - [Idea](#idea)
+  - [Description of Project](#description-of-project)
+  - [Overview of the Project](#overview-of-the-project)
+  - [Interfaces and its explanation](#interfaces-and-its-explanation)
+  - [Environment Setup](#environment-setup)
+  - [Permission required to run](#permission-required-to-run)
+  - [Code Structure of files added from general structure](#code-structure-of-files-added-from-general-structure)
+  - [Common Error Faced](#common-error-faced)
+  - [Future Scope](#future-scope)
+  - [Tools and Languages Used](#tools-and-languages-used)
+  - [Project Development Timeline](#project-development-timeline)
 
 ## Problem Statement
 <p>
@@ -19,7 +33,7 @@ This project web-app UI ans tasks are **inspired from Youtube web**. So, the int
   - see subscribed channels
   - disable to allow adult ads
 <br />
-The above tasks can be **performed with the use of youtube api. This api has 10,000 quota. Each tasks have certain number of quotas to work with. Once, this quota is over. This tasks cannot be performed.** Go to [Common Error Faced](#Common Error Faced) for solving this error.
+The above tasks can be <strong>performed with the use of youtube api. This api has 10,000 quota. Each tasks have certain number of quotas to work with. Once, this quota is over. This tasks cannot be performed</strong>. Go to <strong>Common Error Faced</strong> for solving this error.
 In this platform, user gets authenticated with their face first then google authentication takes place. Once, user gets into the platform and perform tasks, camera identifies the face of the user and detects its age. As per the age, advertisements are shown.
 
 ## Overview of the Project
@@ -65,7 +79,7 @@ In this platform, user gets authenticated with their face first then google auth
   <p align="center">
     <img width="960" alt="image" src="https://user-images.githubusercontent.com/92020810/170830557-374d9f32-7e42-49b8-887c-2301340311df.png">
   </p>
-## Installation/Environment Setup
+## Environment Setup
 - Clone the repository:
   ```
   git clone"https://github.com/dewanshiPaul/Smart-Advertising.git"
@@ -113,6 +127,48 @@ In this platform, user gets authenticated with their face first then google auth
 ## Permission required to run
 - Allow camera access
 
+## Code Structure of files added from general structure
+- Backend
+  ```
+  |-------known_faces (stores all user's images whoever has created account. Images name are set as the username set by user during creating account)
+  |-------new_face (stores an image for facial recognition during login)
+  |-------modelNweight (stores age and face detection models for detecting age of the user when he/she is working in the web app)
+  |            |----------age_deploy.prototxt 
+  |            |----------age_net.caffemodel
+  |            |----------opencv_face_detector_unit8.pb
+  |            |----------opencv_face_detector.pbtxt
+  |-------agedetection.py (code for detecting age of the user)
+  |-------app.py (code for flask to route through different pages)
+  |-------facerecognition_v1.py (code for implementing face recognition while login. Model used here is different as per used in age detection as here accuracy matters more and fast too whereas there orientation of face also matters.)
+  ```
+- Frontend
+  ```
+  |-------src (folder)
+  |        |-----------adsimages
+  |        |               |--------adult (stores all ads images for adults)
+  |        |               |--------kids  (stores all ads images for kids)
+  |        |-----------components
+  |        |               |--------adsheader (for implementing header for ads to display)
+  |        |               |--------comment (for implementing each comments UI)
+  |        |               |--------comments (for implementing comments UI)
+  |        |               |--------content (for implementing each video box UI)
+  |        |               |--------header (for implementing each top header UI)
+  |        |               |--------comment (for implementing each screens for each tasks UI)
+  |        |               |--------sidebar (for implementing side navigation UI)
+  |        |               |--------skeletonframe (for implementing skeleton frames while loading UI)
+  |        |               |--------videometadata (for implementing video description and details section UI)
+  |        |               |--------videonext (for implementing related video section UI)
+  |        |-----------redux
+  |        |             |----------action (for implementing all the action states of redux)
+  |        |             |----------reducer (for implementing all the reducer states of redux)
+  |        |             |----------actiontype (for implementing all variable to action types of redux)
+  |        |             |----------store (for implementing all the store of redux)
+  |        |-----------apiFromYoutube (for storing api from youtube)
+  |        |-----------firebase (for configurating our app with firebase)
+  |--------.env.api (environment variable)
+  
+  ```
+
 ## Common Error Faced
 - Error 403: This error is caused when certain quota of youtube api is exhausted for the current day. For this to resolve, you can either use this application after 24 hourse or create new account in firebase. <br />
   1. Go to the website ``` https://firebase.google.com/ ```
@@ -151,7 +207,7 @@ In this platform, user gets authenticated with their face first then google auth
 - Error axios: This is mostly when your face is not properly located in the webcam section. Try to place your face properly.
 
 ## Future Scope
-This idea can be implemented to various other to web apps to allow proper advertising with more parameters like race or emotions to make advertisements more segregatable and shown to targeted audiences.
+This idea can be implemented to various other to web apps to allow proper advertising with more parameters like race, gender or emotions to make advertisements more segregatable and shown to targeted audiences.
 
 ## Tools and Languages Used
 <p float="left">
