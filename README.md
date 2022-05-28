@@ -11,6 +11,8 @@ This project web-app is inspired from Youtube web. So, the interface is similar 
   - see related videos
   - comment to a video
   - see subscribed channels
+<br />
 In this platform, user gets authenticated with their face first then google authentication takes place. Once, user gets into the platform and perform tasks, camera identifies the face of the user and detects its age. As per the age, advertisements are shown.
 
-## Tools used
+## Tools
+https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png
