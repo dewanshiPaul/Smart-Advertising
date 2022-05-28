@@ -18,7 +18,7 @@ In this platform, user gets authenticated with their face first then google auth
 <p float="left">
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" width="50" height="50" />
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flask/flask.png" width="50" height="50" />
-<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png" width="50" height="50" />
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Flinguinecode.com%2Fpost%2Fstep-by-step-example-how-to-add-redux-to-create-react-app&psig=AOvVaw1Fy7O8UKNj_rWBeBDfx7JK&ust=1653826390246000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKiYi8qVgvgCFQAAAAAdAAAAABAD" width="50" height="50" />
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png" width="50" height="50" />
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png" width="50" height="50" />
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" width="50" height="50" />
