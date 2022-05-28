@@ -77,7 +77,7 @@ In this platform, user gets authenticated with their face first then google auth
      python -m venv venv
      ```
   3. Enter inside the virtual environment
-     Write the following command in the terminal/command prompt.
+     Write the following command in the terminal/command prompt. <br />
      for windows
      ```
      "venv\Scripts\activate" 
