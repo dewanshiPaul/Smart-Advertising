@@ -1,10 +1,6 @@
 import face_recognition
-from deepface import DeepFace
 import numpy as np
 import os
-# import agedetection as ag
-# import cv2
-# import base64
 
 class Face_Recognition:
     
@@ -17,17 +13,17 @@ class Face_Recognition:
         for file in os.listdir(self.unknown_image_path_file):
             name = ''
 
-            if file[0]!='.':
+            if file[0]!='.': #load images to encode
                 known_image = face_recognition.load_image_file(self.known_person_path_file)
                 known_image_encoding = face_recognition.face_encodings(known_image)[0]
                 known_image_encodings = [known_image_encoding]
                 known_face_names = [self.known_name]
-
+                #load unknown images to encode
                 unknown_image = face_recognition.load_image_file(self.unknown_image_path_file+'/'+file)
 
                 face_locations = face_recognition.face_locations(unknown_image)
                 face_encodings = face_recognition.face_encodings(unknown_image,face_locations)
-                
+                #detect both encodings for finding match
                 for (top,right,bottom,left),face_encode in zip(face_locations, face_encodings):
                     match_detected = face_recognition.compare_faces(known_image_encodings,face_encode)
                     name = "Face not recognised"
@@ -38,11 +34,5 @@ class Face_Recognition:
                     if match_detected[best_match_index]:
                         name = known_face_names[best_match_index]
                         return name
-
-                # unknownImagePath = self.unknown_image_path_file+'/'+file
-                # resp = DeepFace.verify(img1_path = self.known_person_path_file,img2_path = unknownImagePath)
-                # age = DeepFace.analyze(img_path = unknownImagePath,actions = ['age'])
-                # img = cv2.imread(unknownImagePath)
-                # age = ag.age_gender_detector(img)
-                
+                                        
                 return name
