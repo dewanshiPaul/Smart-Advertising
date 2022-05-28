@@ -1,0 +1,108 @@
+@import '../../base';
+
+.Videonext {
+    // border-bottom: 0.3px solid $border-color;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    padding-right: 1rem;
+
+    &-left {
+        position: relative;
+        text-align: center;
+
+        &-thumbnail {
+            width: 100%;
+
+            &-channel {
+                border-radius: 50%;
+                width: 50%;
+            }
+
+            &-wrapper {
+                width: 100%;
+            }
+        }
+
+        &-duration {
+            position: absolute;
+            bottom: 0.5rem;
+            right: 1rem;
+            padding: 0.2rem;
+            background: #080808ec;
+            border-radius: 3px;
+            font-size: 0.9rem;
+        }
+    }
+
+    &-right {
+        &-title {
+            font-size: 0.9rem;
+            color: #fff;
+            letter-spacing: 0.1px;
+            padding: 0;
+            margin: 0;
+            @include lineclamp(2);
+        }
+
+        &-details {
+            font-size: 0.9rem;
+        }
+
+        &-channel {
+            display: flex;
+            align-items: center;
+            margin: 0.5rem 0;
+            img {
+                width: 8vh;
+                height: 8vh;
+                border-radius: 50%;
+                margin-right: 0.5rem;
+                cursor: pointer;
+            }
+
+            p {
+                font-size: 0.6rem;
+                padding: 0%;
+                margin: 0;
+                @include lineclamp(1);
+            }
+        }
+
+        &-description {
+            @include lineclamp(2);        
+        }
+    }
+}
+
+@media (max-width: $breakpoints-medium) {
+    .Videonext {
+        font-size: 0.8rem;
+
+        &-right {
+            &-details {
+                @include lineclamp(1);
+            }
+
+            &-channel {
+                margin: 0.1rem 0;
+
+                img {
+                    display: none;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+
+            &-title {
+                font-size: 14px;
+                @include lineclamp(2);
+            }
+
+            &-description {
+                display: none;        
+            }            
+        }
+    }
+}

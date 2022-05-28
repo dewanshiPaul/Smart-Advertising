@@ -1,0 +1,56 @@
+@import '../../_base.scss';
+
+.Webcam {
+    padding: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .field {
+        border: 2px solid $text-color;
+        border-radius: 20px;
+        height: 40px;
+        background-color: $black-secondary;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1rem;
+        margin-bottom: 1rem;
+
+        input {
+            background-color: $black-secondary;
+            border: none;
+            color: $text-color;
+            width: 100%;
+            margin: 0;
+            padding: 0 2px;
+                
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                background-color: $black-secondary;
+            }
+        }
+    }
+
+    button {
+        border: none;
+        border-radius: 20px;
+        width: 20rem;
+        font-size: 22px;
+        font-weight: 600;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+        &:hover {
+            background-color: $text-color;
+        }
+    }
+
+    div {
+        width: 20rem;
+        text-align: center;
+        color: $text-color;
+    }    
+}

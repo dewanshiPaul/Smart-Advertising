@@ -1,0 +1,46 @@
+@import '../../base';
+
+.channelHeader {
+    border-bottom: 1px solid $border-color;
+    div {
+        img {
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+    }
+
+    button {
+        border: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        background-color: #CC0000;
+        margin: 2rem 0;
+        padding: 0.5rem 0.75rem;
+        border-radius: 3px;
+
+        &.btn-gray {
+            background: gray;
+        }
+    }
+}
+
+@media (max-width: $breakpoints-medium) {
+    .channelHeader {
+        padding: 1rem 0;
+
+        div {
+            img {
+                width: 8rem;
+                height: 8rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                margin: 0;
+            }
+        }
+    }
+}

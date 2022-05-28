@@ -1,0 +1,15 @@
+@import '../../base';
+
+.Watchscreen {
+    height: 60vh;
+    background-color: #353946;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: $breakpoints-small) {
+    .Watchscreen {
+        height: 40vh;
+
+    }
+}

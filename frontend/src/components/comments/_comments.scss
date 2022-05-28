@@ -1,0 +1,49 @@
+@import '../../base';
+
+.Comments {
+    p {
+        color: #fff;
+    }
+
+    &-format {
+        display: flex;
+        width: 100%;
+        margin: 1rem 0;
+        
+        img {
+            border-radius: 50%;
+            height: 8vh;
+            width: 8vh;
+            margin-right: 1rem;
+            object-fit: contain;
+        }
+
+        form {
+            display: flex;
+            flex-grow: 1;
+
+            input {
+                border: none;
+                flex-grow: 1;
+                background: transparent;
+                border-bottom: 2px solid $border-color;
+                color: #fff;
+
+                &:focus {
+                    outline: none;
+                    border-color: #fff;
+                }
+            }
+
+            button {
+                border: none;
+                background-color: #353946;
+                color: #fff;
+                letter-spacing: 0.5px;
+                margin-left: 1rem;
+                padding: 0rem 1rem;
+                border-radius: 3px;
+            }
+        }
+    }
+}

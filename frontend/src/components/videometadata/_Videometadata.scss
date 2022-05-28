@@ -1,0 +1,64 @@
+@import '../../base';
+
+.Videometadata {
+    &-top-count {
+        span {
+            margin-right: 0.5rem;
+            cursor: pointer;
+        }
+    }
+
+    &-channel {
+        border-top: 0.2px solid $border-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+        padding: 1rem 0;
+
+        div {
+            img {
+                border-radius: 50%;
+                height: 10vh;
+                width: 10vh;
+                margin-right: 1rem;
+            }
+        }
+
+        button {
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 1rem;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            border-radius: 3px;
+            background-color: #CC0000;
+
+            &.btn-gray {
+                background: gray;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-description {
+        font-size: 0.9rem;
+        white-space: pre-line;
+        border-bottom: 0.2px solid $border-color;
+        padding-bottom: 1rem;
+
+        .showMoreText {
+            text-decoration: none;
+            display: block;
+            margin: 1rem 0;
+            color: #fff;
+            font-weight: 500;
+        }
+    }
+}

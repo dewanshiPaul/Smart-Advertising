@@ -1,0 +1,109 @@
+@import '../../base';
+
+.createaccount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 4rem;
+
+    &-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 4rem;
+
+        h1 {
+            color: $text-color;
+            margin-bottom: 0.5em;
+        }
+
+        &-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .field {
+                // width: 100%;
+                border: 2px solid $text-color;
+                border-radius: 20px;
+                height: 40px;
+                background-color: $black-secondary;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 1rem;
+                margin-bottom: 1rem;
+    
+                input {
+                    background-color: $black-secondary;
+                    border: none;
+                    margin-left: 0.5rem;
+                    color: $text-color;
+                    width: 50vh;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .image {
+                margin-bottom: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                input {
+                    padding-bottom: 1rem;
+                    color: $text-color;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+
+                img {
+                    padding: 1rem;
+                    max-width: 30%;
+                    max-height: 30%;
+                }
+
+            }
+
+            .submit {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                input {
+                    border: none;
+                    border-radius: 20px;
+                    font-size: 22px;
+                    font-weight: 600;
+                    padding: 0 2rem;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+                    &:hover {
+                        background-color: $text-color;
+                    }
+                }
+            }
+        }
+
+        .loginLink {
+            width: 100%;
+            padding-top: 1rem;
+            span {
+                float: right;
+                font-size: 22px;
+
+                &:hover {
+                    cursor: pointer;
+                    color: rgb(0, 132, 255);
+                }
+            }
+        }
+    }
+}
