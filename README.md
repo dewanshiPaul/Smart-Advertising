@@ -85,7 +85,7 @@ In this platform, user gets authenticated with their face first then google auth
   4. Install modules
      Write the following command in the terminal/command prompt.
      ```
-     pip install requirements.txt
+     pip install -r requirements.txt
      ```
   5. Run the backend
      Write the following command in the terminal/command prompt.
