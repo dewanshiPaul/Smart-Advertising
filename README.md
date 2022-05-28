@@ -205,6 +205,7 @@ In this platform, user gets authenticated with their face first then google auth
   32. Move to your editor. In .env.api replace the content in the string with the content you just copied.
 - Error 401: This error is caused when your google authorized account is not authenticated properly for youtube api to get access to requests. This will not allow you to see subscribed channels, comment. To solve this, just Log out from the web app and login again.
 - Error axios: This is mostly when your face is not properly located in the webcam section. Try to place your face properly.
+- Webcam not showing: This is because your browser may not be updated. Update your browser.
 
 ## Future Scope
 This idea can be implemented to various other to web apps to allow proper advertising with more parameters like race, gender or emotions to make advertisements more segregatable and shown to targeted audiences.
