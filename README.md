@@ -67,7 +67,7 @@ In this platform, user gets authenticated with their face first then google auth
 ## Installation/Environment Setup
 - Clone the repository:
   ```
-  git clone 
+  git clone"https://github.com/dewanshiPaul/Smart-Advertising.git"
   ```
 - Go inside folder name "backend"
   1. Open terminal or command prompt in this folder
@@ -80,7 +80,7 @@ In this platform, user gets authenticated with their face first then google auth
      Write the following command in the terminal/command prompt.
      ```
      "venv\Scripts\activate" for windows
-     source venv/bin/activate
+     source venv/bin/activate for mac-os
      ```
   4. Install modules
      Write the following command in the terminal/command prompt.
