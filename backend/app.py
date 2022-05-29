@@ -79,7 +79,6 @@ def verify():
         im_arr = np.frombuffer(im_bytes, dtype=np.uint8)  # im_arr is one-dim Numpy array
         img = cv2.imdecode(im_arr, flags=cv2.IMREAD_COLOR)
         response = ad.age_gender_detector(img)
-        print(response)
     except Exception as e:
         print(e)
         pass

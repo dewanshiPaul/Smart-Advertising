@@ -46,16 +46,20 @@ def age_gender_detector(frame):
     t = time.time()
     frameFace, bboxes = getFaceBox(faceNet, frame)
     for bbox in bboxes:
-        face = frame[max(0,bbox[1]-padding):min(bbox[3]+padding,frame.shape[0]-1),max(0,bbox[0]-padding):min(bbox[2]+padding, frame.shape[1]-1)]
+        try:
+            face = frame[max(0,bbox[1]-padding):min(bbox[3]+padding,frame.shape[0]-1),max(0,bbox[0]-padding):min(bbox[2]+padding, frame.shape[1]-1)]
 
-        blob = cv.dnn.blobFromImage(face, 1.0, (227, 227), MODEL_MEAN_VALUES, swapRB=False)
-        ageNet.setInput(blob)
-        agePreds = ageNet.forward()
-        age = ageList[agePreds[0].argmax()]
+            blob = cv.dnn.blobFromImage(face, 1.0, (227, 227), MODEL_MEAN_VALUES, swapRB=False)
+            ageNet.setInput(blob)
+            agePreds = ageNet.forward()
+            age = ageList[agePreds[0].argmax()]
 
-        if(age == '(0-2)' or age == '(4-7)' or age == '(8-12)' or age == '(13-17)'):
-            content = 'kid'
-        else:
-            content = 'adult'
+            if(age == '(0-2)' or age == '(4-7)' or age == '(8-12)' or age == '(13-17)'):
+                content = 'kid'
+            else:
+                content = 'adult'
+
+        except Exception as e:
+            pass
 #return age detected
     return content
