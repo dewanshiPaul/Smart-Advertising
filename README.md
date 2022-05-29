@@ -10,7 +10,6 @@
   - [Permission required to run](#permission-required-to-run)
   - [Code Structure of files added from general structure](#code-structure-of-files-added-from-general-structure)
   - [Common error faced and their solution](#common-error-faced-and-their-solution)
-  - [Future Scope](#future-scope)
   - [Tools and Languages Used](#tools-and-languages-used)
   - [Project Development Timeline](#project-development-timeline)
 
@@ -52,6 +51,7 @@ In this platform, user gets authenticated with their face first then google auth
     <p align="center">
       <img width="479" alt="image" src="https://user-images.githubusercontent.com/92020810/170828851-80496757-efd2-4dd5-950c-cf18acf58522.png">
     </p>
+    Click once on "Click me" and wait for result. To check,the request you can see base64 code passed in terminal. If it is present, it means request is passsed. </strong>
     <p align="center">
       <img width="481" alt="image" src="https://user-images.githubusercontent.com/92020810/170829504-3944dcdc-4a19-49f1-8bb2-834209b52fa0.png">
       <br />
@@ -172,7 +172,7 @@ In this platform, user gets authenticated with their face first then google auth
   ```
 
 ## Common error faced and their solution
-- Error 403: This error is caused when certain quota of youtube api is exhausted for the current day. For this to resolve, you can either use this application after 24 hourse or create new account in firebase. <br />
+- <strong>Error 403:</strong> This error is caused when certain quota of youtube api is exhausted for the current day. For this to resolve, you can either use this application after 24 hourse or create new account in firebase. <br />
   1. Go to the website ``` https://firebase.google.com/ ```
   2. Login with an account 
   3. Click on "Go to Console" <img width="940" alt="image" src="https://user-images.githubusercontent.com/92020810/170839546-3c721ebe-43e9-4309-909e-88417523513b.png"> 
@@ -205,12 +205,11 @@ In this platform, user gets authenticated with their face first then google auth
   30. Click on "Show Key" under API Keys.<p align="center"><img width="758" alt="image" src="https://user-images.githubusercontent.com/92020810/170840985-927df71b-d4e0-462e-9c1b-2060e9f3fde5.png"></p>
   31. Copy the API KEY is shown.
   32. Move to your editor. In .env.api replace the content in the string with the content you just copied.
-- Error 401: This error is caused when your google authorized account is not authenticated properly for youtube api to get access to requests. This will not allow you to see subscribed channels, comment. To solve this, just Log out from the web app and login again.
-- Error axios: This is mostly when your face is not properly located in the webcam section. Try to place your face properly.
-- Webcam not showing: This is because your browser may not be updated. Update your browser.
-
-## Future Scope
-This idea can be implemented to various other to web apps to allow proper advertising with more parameters like race, gender or emotions to make advertisements more segregatable and shown to targeted audiences.
+- <strong>Error 401:</strong> This error is caused when your google authorized account is not authenticated properly for youtube api to get access to requests. This will not allow you to see subscribed channels, comment. To solve this, just Log out from the web app and login again.
+- <strong>Index out of range showing in terminal of backend while login using face detection:</strong> This means face is not detected from the image you uploaded to create account. Either create a new account with clear image(try with jpeg/jpg/png). Else, go to <strong>backend->known_faces</strong> and delete your image and add a new image file with same name. 
+- <strong>Error of opencv in terminal of backend:</strong> This is mostly when your face is not properly located in the webcam section. Try to place your face properly.
+- <strong>Webcam not showing:</strong> This is because your browser may not be updated. Update your browser.
+<strong>Note: sometimes data are not retrieved properly from youtube api, it delays so refresh/reload page</strong>
 
 ## Tools and Languages Used
 <p float="left">
