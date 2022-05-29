@@ -209,7 +209,9 @@ In this platform, user gets authenticated with their face first then google auth
 - <strong>Index out of range showing in terminal of backend while login using face detection:</strong> This means face is not detected from the image you uploaded to create account. Either create a new account with clear image(try with jpeg/jpg/png). Else, go to <strong>backend->known_faces</strong> and delete your image and add a new image file with same name. 
 - <strong>Error of opencv in terminal of backend:</strong> This is mostly when your face is not properly located in the webcam section. Try to place your face properly.
 - <strong>Webcam not showing:</strong> This is because your browser may not be updated. Update your browser.
+<p>
 <strong>Note: sometimes data are not retrieved properly from youtube api, it delays so refresh/reload page</strong>
+</p>
 
 ## Tools and Languages Used
 <p float="left">
