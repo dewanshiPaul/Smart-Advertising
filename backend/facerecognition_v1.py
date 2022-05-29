@@ -11,7 +11,7 @@ class Face_Recognition:
 
     def recognize_face(self):
         for file in os.listdir(self.unknown_image_path_file):
-            name = ''
+            # name = ''
 
             if file[0]!='.': #load images to encode
                 known_image = face_recognition.load_image_file(self.known_person_path_file)

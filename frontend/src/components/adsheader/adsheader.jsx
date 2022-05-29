@@ -8,9 +8,9 @@ import ADULT4 from '../../adsimages/adult/adult4.jpg';
 import ADULT5 from '../../adsimages/adult/adult5.jpg';
 import KIDS1 from '../../adsimages/kids/kids1.jpg';
 import KIDS2 from '../../adsimages/kids/kids2.jpg';
-import KIDS3 from '../../adsimages/kids/kids3.jpg';
+import KIDS3 from '../../adsimages/kids/kids3.jpeg';
 import KIDS4 from '../../adsimages/kids/kids4.jpg';
-import KIDS5 from '../../adsimages/kids/kids5.jpeg';
+import KIDS5 from '../../adsimages/kids/kids5.jpg';
 
 
 
