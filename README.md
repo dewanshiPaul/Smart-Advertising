@@ -9,7 +9,7 @@
   - [Environment Setup](#environment-setup)
   - [Permission required to run](#permission-required-to-run)
   - [Code Structure of files added from general structure](#code-structure-of-files-added-from-general-structure)
-  - [Common Error Faced](#common-error-faced)
+  - [Common error faced and their solution](#common-error-faced-and-their-solution)
   - [Future Scope](#future-scope)
   - [Tools and Languages Used](#tools-and-languages-used)
   - [Project Development Timeline](#project-development-timeline)
@@ -35,7 +35,7 @@ This project web-app UI ans tasks are **inspired from Youtube web**. So, the int
   - authentication with face + google
   - segregate advertisements with age of user
 <br />
-The above four tasks can be <strong>performed with the use of youtube api. This api has 10,000 quota. Each tasks have certain number of quotas to work with. Once, this quota is over. This tasks cannot be performed(As task was to concern more over facial recognition since it is the topic)</strong>. Go to <strong>Common Error Faced</strong> for solving this error.
+The above four tasks can be <strong>performed with the use of youtube api. This api has 10,000 quota. Each tasks have certain number of quotas to work with. Once, this quota is over. This tasks cannot be performed(As task was to concern more over facial recognition since it is the topic)</strong>. Go to <strong>Common error faced and their solution</strong> for solving this error.
 In this platform, user gets authenticated with their face first then google authentication takes place. Once, user gets into the platform and perform tasks, camera identifies the face of the user and detects its age. As per the age, advertisements are shown.
 
 ## Overview of the Project
@@ -171,7 +171,7 @@ In this platform, user gets authenticated with their face first then google auth
   
   ```
 
-## Common Error Faced
+## Common error faced and their solution
 - Error 403: This error is caused when certain quota of youtube api is exhausted for the current day. For this to resolve, you can either use this application after 24 hourse or create new account in firebase. <br />
   1. Go to the website ``` https://firebase.google.com/ ```
   2. Login with an account 
