@@ -19,7 +19,7 @@
 Advertisements are one of the primary way for increasing the market size of the products. Advertisements are introduced in common web-abb too. Smart advertising for showing products to target audiences will increase the efficiency.</p>
 Scenario:-
 <br />
-An adult has account in a web-app. This web-app shows ads for both adult and kids. When adult gives this to any kid to use, kid come across with this adult ads too. This doesnot provide any positive impact to the kid in terms of buying product but has non ethical impact. The problem is to find an efficient method to show advertisements to the audiences without having non-ethical impact to the users. 
+An adult has account in a web-app. This web-app shows ads for both adult and kids. When adult gives this to any kid to use, kid come across with this adult ads too. This doesnot provide any positive impact to the kid in terms of buying product but has non ethical impact. The problem is to find an efficient method to show advertisements to the audiences without having unethical impact to the users. 
 
 ## Idea 
 The main idea is to promote smart advertising. Advertisement when shown to proper and target audience makes proper sense. Keeping this key concept and the problem statement, the project uses **facial recognition** and **age detection** to distinguish users as per their detected age and show advertisement according to that. <br />
